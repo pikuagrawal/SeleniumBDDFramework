@@ -1,0 +1,110 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4135363300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Validating sign in text on login page",
+        "description": "",
+        "id": "login-feature;validating-sign-in-text-on-login-page",
+        "after": [
+          {
+            "result": {
+              "duration": 925089500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 116705900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on homepage",
+            "match": {
+              "location": "HomeSteps.i_am_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 526756400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on login button on homepage",
+            "match": {
+              "location": "HomeSteps.i_click_on_login_button_on_homepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5073627900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see \"Welcome, Please Sign In!\" text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome, Please Sign In!",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginSteps.i_should_see_text(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 79400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the URL should contain \"/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/login",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginSteps.the_URL_should_contain(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "login feature",
+    "description": "As a user\r\nI want to add login functionality\r\nSo that customer can use it",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Test"
+      }
+    ]
+  }
+]
